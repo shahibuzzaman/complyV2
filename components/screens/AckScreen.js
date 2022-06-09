@@ -37,27 +37,13 @@ const AcknowledgementScreen = ({navigation}) => {
             <View>
               <Image
                 style={{
-                  width: windowWidth / 10,
-                  height: windowWidth / 10,
-                  marginRight: 5,
+                  width: windowWidth / 2,
+                  height: windowWidth / 8,
                 }}
                 resizeMode="contain"
                 source={require('../assets/Logo-glow.png')}
               />
             </View>
-
-            <Text
-              numberOfLines={1}
-              ellipsizeMode="tail"
-              style={{
-                textAlign: 'center',
-                fontSize: 20,
-                color: 'white',
-                fontWeight: 'bold',
-                marginTop: -5,
-              }}>
-              Compliance Laws (BD)
-            </Text>
           </View>
         </Header>
       </View>

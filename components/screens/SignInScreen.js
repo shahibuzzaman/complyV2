@@ -121,27 +121,13 @@ const SignInScreen = ({navigation}) => {
             <View>
               <Image
                 style={{
-                  width: windowWidth / 10,
-                  height: windowWidth / 10,
-                  marginRight: 5,
+                  width: windowWidth / 2,
+                  height: windowWidth / 8,
                 }}
                 resizeMode="contain"
                 source={require('../assets/Logo-glow.png')}
               />
             </View>
-
-            <Text
-              numberOfLines={1}
-              ellipsizeMode="tail"
-              style={{
-                textAlign: 'center',
-                fontSize: 20,
-                color: 'white',
-                fontWeight: 'bold',
-                marginTop: -5,
-              }}>
-              Compliance Laws (BD)
-            </Text>
           </View>
         </Header>
       </View>
@@ -300,10 +286,56 @@ const SignInScreen = ({navigation}) => {
         style={{
           flex: 0.08,
           backgroundColor: '#FF0000',
-          alignItems: 'center',
-          justifyContent: 'center',
+          flexDirection: 'row',
         }}>
-        <Text style={{color: 'white', fontSize: 18}}></Text>
+        <View
+          style={{
+            flex: 3,
+            justifyContent: 'center',
+            alignItems: 'flex-end',
+          }}>
+          <Text
+            style={{
+              fontSize: 12,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              color: 'white',
+            }}>
+            Brought to You By
+          </Text>
+        </View>
+        <View
+          style={{
+            flex: 1,
+            backgroundColor: 'red',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <Image
+            style={{
+              height: '80%',
+              width: '40%',
+            }}
+            resizeMode="contain"
+            source={require('../assets/icg.png')}
+          />
+        </View>
+        <View
+          style={{
+            flex: 3,
+            justifyContent: 'center',
+            alignItems: 'flex-start',
+          }}>
+          <Text
+            style={{
+              fontSize: 15,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              color: 'white',
+            }}>
+            ICG.COM.BD
+          </Text>
+        </View>
       </View>
     </Animated.View>
   );

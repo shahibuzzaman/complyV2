@@ -22,12 +22,20 @@ const SplashScreen = ({navigation}) => {
 
   return (
     <View style={{flex: 1}}>
-      <View style={{flex: 3, justifyContent: 'center', alignItems: 'center'}}>
+      <View
+        style={{
+          flex: 3,
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+        }}>
         <Image
-          style={{height: 200, width: 200}}
+          style={{height: 200, width: 100, flex: 1, resizeMode: 'cover'}}
           source={require('../assets/Logo.png')}
         />
-        <Animated.Text
+        {/* <Animated.Text
           style={{
             opacity,
             fontSize: 24,
@@ -36,7 +44,7 @@ const SplashScreen = ({navigation}) => {
             color: 'green',
           }}>
           Compliance Laws (BD)
-        </Animated.Text>
+        </Animated.Text> */}
       </View>
       <View
         style={{

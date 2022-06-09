@@ -20,10 +20,10 @@ const SplashScreen = ({navigation}) => {
     <View style={{flex: 1}}>
       <View style={{flex: 3, justifyContent: 'center', alignItems: 'center'}}>
         <Image
-          style={{height: 200, width: 200}}
+          style={{height: 200, width: 310, flex: 1, resizeMode: 'contain'}}
           source={require('../assets/Logo.png')}
         />
-        <Animated.Text
+        {/* <Animated.Text
           style={{
             opacity,
             fontSize: 24,
@@ -32,7 +32,7 @@ const SplashScreen = ({navigation}) => {
             color: 'green',
           }}>
           Compliance Laws (BD)
-        </Animated.Text>
+        </Animated.Text> */}
       </View>
       <View
         style={{
